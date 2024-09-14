@@ -1,0 +1,16 @@
+{
+  "name": "crud_produtos",
+  "version": "1.0.0",
+  "description": "Realiza CRUD de produtos",
+  "main": "main.js",
+  "type":"module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [
+    "CRUD",
+    "produtos"
+  ],
+  "author": "Ries",
+  "license": "ISC"
+}

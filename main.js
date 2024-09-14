@@ -1,6 +1,4 @@
-//const produtoRepository = require("./repository/produto_repository.js")
-
-import produtoRepository from "./repository/produto_repository.js";
+const produtoRepository = require("./repository/produto_repository.js")
 
 function main() {
     produtoRepository.inserir({nome:"Arroz", categoria:"Alimento", preco:4.7});

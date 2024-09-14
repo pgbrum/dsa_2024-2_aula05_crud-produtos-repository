@@ -59,8 +59,7 @@ function pesquisarPorNomeLike(nome) {
         return (produtoNomeUpper.search(nomeUpper) >= 0);
     })
 }
-
-export default {
+module.exports = {
     listar,
     inserir,
     buscarPorId,
@@ -69,7 +68,7 @@ export default {
     pesquisarPorCategoria,
     pesquisarPorNomeLike
 }
-/*module.exports = {
+/*export default {
     listar,
     inserir,
     buscarPorId,

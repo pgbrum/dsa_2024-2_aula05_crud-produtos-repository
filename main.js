@@ -1,3 +1,4 @@
+//import produtoRepository from "./repository/produto_repository.js";
 const produtoRepository = require("./repository/produto_repository.js")
 
 function main() {

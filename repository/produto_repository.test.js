@@ -60,3 +60,24 @@ test('Quando buscar por id inexistente, deve retornar undefined', () => {
     const resultado = produtoRepository.buscarPorId(10);
     expect(resultado).toBeUndefined();
 });
+
+// Cenario de sucesso- Deletar()
+test("Quando deletar um id existente, deve remover e retornar o dado", () => {
+    const produtoDeletadoEsperado = {
+        nome: "Feijao",
+        categoria: "alimento",
+        preco: 7.00,
+        id: 2
+    };
+    const quantidadeEsperada = 1;
+
+    resultado = produtoRepository.deletar(2);
+    expect(resultado).toEqual(produtoDeletadoEsperado);
+    expect(produtoRepository.listar().length).toBe(quantidadeEsperada);
+})
+
+// Cenario de exceção- buscarPorId()
+test("Quando deletar um id inexistente, deve retornar undefined", () => {
+    const resultado = produtoRepository.deletar(10);
+    expect(resultado).toBeUndefined();
+})
